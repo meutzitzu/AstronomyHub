@@ -23,7 +23,7 @@ margin:0;
 
 h1{
   font-family: 'Comfortaa', cursive;
-  font-size: 45px;
+  font-size: 50px;
   text-align: center;
   margin: .5em;
 }
@@ -228,7 +228,12 @@ padding: 2px 16px;
   color: white;
 }
 
-
+.ecusoane img{
+  width: 160px;
+	height:160px;
+	float: left;
+  border-radius: 50%;
+}
 #sideLogo{display:none;}
 
 @media only screen and (min-width: 768px) {
