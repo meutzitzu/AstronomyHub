@@ -1,39 +1,62 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <title>Astronomy Hub-beta</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="AstronomyHub.css">
-    <style></style>
+    <style>
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .sidenav {
+          
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+           
+        
+        }
+
+    </style>
   </head>
   <body>
     <aside>
-      <figure>
-        <img id="sideLogo" src='./res/common/AHL.png'/>
-        <figcaption>Astronomy Hub</figcaption>
-      </figure>
+        <figure>
+            <img id="sideLogo" src='./res/common/AHL.png' />
+            <figcaption>Astronomy Hub</figcaption>
+        </figure>
       <img id="button_menu" src="./res/common/menu.png"/>
-      <nav >
-        <ul>
-          <li><a href="index.html" class="selected" > Home         </a></li>
-          <li><a href="./pages/teorie.html"> Teorie       </a></li>
-          <li><a > Olimpiada    </a></li>
-          <li><a > Materiale    </a></li>
-          <li><a > Despre noi   </a></li>
-        </ul>
+      <nav>
+          
+          <ul>
+              <li><a href="index.html" class="selected"> Home         </a></li>
+              <li><a href="./pages/teorie.html"> Teorie       </a></li>
+              <li><a> Olimpiada    </a></li>
+              <li><a> Materiale    </a></li>
+              <li><a> Despre noi   </a></li>
+          </ul>
       </nav>
     </aside>
     <main>
-    <img id="grandLogo"  src="./res/homepage/AHL_Nebula.png"/>
-    <h1>Bine ati venit !</h1>
-    <p>Daca te pasioneaza universul, vrei sa studiezi astronomia si astrofizica
-    sau vrei doar sa te relaxezi citind despre acestea ai ajuns in locul potrivit.
-    </p>
-    <p>Carti, articole, filme, lunk-uri, aici puteti gasi absolut tot in legatura cu astronomia</p>
-    <p>De asemenea, daca esti elev din Cluj, te asteptam sa faci parte din grupul nostru.
-    Organizam ore de pregatire pentru Olimpiada, nopti de observatie si multe altele!</p>
-    <a href="../lectii/index.html" class="cta">Incepe!</a>
+        <div>
+            <video width="500" autoplay muted loop>
+                <source src="logo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h1>Bine ati venit !</h1>
+        <p>
+            Daca te pasioneaza universul, vrei sa studiezi astronomia si astrofizica
+            sau vrei doar sa te relaxezi citind despre acestea ai ajuns in locul potrivit.
+        </p>
+        <p>Carti, articole, filme, lunk-uri, aici puteti gasi absolut tot in legatura cu astronomia</p>
+        <p>
+            De asemenea, daca esti elev din Cluj, te asteptam sa faci parte din grupul nostru.
+            Organizam ore de pregatire pentru Olimpiada, nopti de observatie si multe altele!
+        </p>
+        <a href="../lectii/index.html" class="cta">Incepe!</a>
     </main>
 
     <script>
