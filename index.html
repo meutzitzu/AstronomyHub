@@ -13,10 +13,10 @@
         }
 
         .sidenav {
-          
+
             position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-           
-        
+
+
         }
 
     </style>
@@ -28,16 +28,20 @@
             <figcaption>Astronomy Hub</figcaption>
         </figure>
       <img id="button_menu" src="./res/common/menu.png"/>
-      <nav>
-          
-          <ul>
-              <li><a href="index.html" class="selected"> Home         </a></li>
-              <li><a href="./pages/teorie.html"> Teorie       </a></li>
-              <li><a> Olimpiada    </a></li>
-              <li><a> Materiale    </a></li>
-              <li><a> Despre noi   </a></li>
-          </ul>
-      </nav>
+      <ul>
+        <li><a href="index.html" class="selected" >     Home         </a></li>
+        <li><a href="./pages/teorie.html">     Teorie       </a></li>
+        <li>
+          <button class="dropdown-btn"> Olimpiada </button>
+          <div class="dropdown-container">
+            <a href="./pages/programa.html">Programa</a>
+            <a href="#">Despre</a>
+            <a href="#">Probleme si subiecte</a>
+          </div>
+        </li>
+        <li><a > Materiale    </a></li>
+        <li><a > Despre noi   </a></li>
+      </ul>
     </aside>
     <main>
         <div>
@@ -76,6 +80,22 @@
         }
       )();
     </script>
+    <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
 
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active-dropdown");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
   </body>
 </html>
