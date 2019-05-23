@@ -51,12 +51,11 @@ body{
 
 
 aside{
-  color:#FFFFFF;
-  background-color: #424242;
+  background-color: #232323;
   display: grid;
   grid-template-columns: auto 40px;
   padding:2em;
-  position: relative;
+  color: #424242;
 }
 
 img{
@@ -285,7 +284,7 @@ padding: 2px 16px;
  text-align: left;
  cursor: pointer;
  outline: none;
- color: #FFFFFF;
+ color:#FFFFFF;
  width: 100%;
  text-decoration: none;
  text-transform: uppercase;
@@ -296,6 +295,11 @@ padding: 2px 16px;
 
 .dropdown-btn:hover, .dropdown-container a:hover, aside a:hover {
  color: #40E0D0;
+ -webkit-transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ -ms-transition: all 0.5s;
+ -o-transition: all 0.5s;
+ transition: all 0.5s;
 }
 
 
