@@ -52,10 +52,11 @@ body{
 
 aside{
   color:#FFFFFF;
-  background-color: #232323;
+  background-color: #424242;
   display: grid;
   grid-template-columns: auto 40px;
   padding:2em;
+  position: relative;
 }
 
 img{
@@ -256,8 +257,6 @@ padding: 2px 16px;
   figcaption{display: none;}
 
 
-
-
   ul{
     display: block;
     margin-top: 2em;
@@ -286,7 +285,7 @@ padding: 2px 16px;
  text-align: left;
  cursor: pointer;
  outline: none;
- color:#FFFFFF;
+ color: #FFFFFF;
  width: 100%;
  text-decoration: none;
  text-transform: uppercase;
