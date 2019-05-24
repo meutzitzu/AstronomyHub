@@ -1,47 +1,46 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Astronomy Hub-beta</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="AstronomyHub.css">
-    <style>
-
-        video {
-            width: 100%;
-            height: auto;
-        }
-
-        .sidenav {
-
-            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-
-
-        }
-
-    </style>
+    <style></style>
   </head>
   <body>
     <aside>
-        <figure>
-            <img id="sideLogo" src='./res/common/AHL.png' />
-            <figcaption>Astronomy Hub</figcaption>
-        </figure>
-      <img id="button_menu" src="./res/common/menu.png"/>
-      <ul>
-        <li><a href="index.html" class="selected" >     Home         </a></li>
-        <li><a href="./pages/teorie.html">     Teorie       </a></li>
-        <li>
-          <button class="dropdown-btn"> Olimpiada </button>
-          <div class="dropdown-container">
-            <a href="./pages/programa.html">Programa</a>
-            <a href="./pages/Despre.html">Despre</a>
-            <a href="#">Probleme si subiecte</a>
-          </div>
-        </li>
-        <li><a > Materiale    </a></li>
-        <li><a > Despre noi   </a></li>
-      </ul>
+          <figure>
+              <img id="sideLogo" src='./res/common/AHL.png' />
+              <figcaption>Astronomy Hub</figcaption>
+          </figure>
+          <nav class="nav">
+            <ul>
+              <li>
+                  <a href="#" class="selected">Home</a>
+              </li>
+              <li>
+                  <a href="#">Olimpiada</a>
+                  <ul>
+                      <li><a href="#">Programa</a></li>
+                      <li><a href="#">Despre</a></li>
+                      <li><a href="#">Probleme si Subiecte</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Teorie</a>
+                  <ul>
+                      <li><a href="#">Legea lui Kepler</a></li>
+                      <li><a href="#">Mecanica orbitala</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Materiale</a>
+              </li>
+              <li>
+                  <a href="#">Despre Noi</a>
+              </li>
+            </ul>
+          </nav>
     </aside>
     <main>
         <div>
@@ -50,6 +49,8 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        <!--Astronomy-Metallica -->
+        <iframe width="0" height="0" src="./res/common/Astronomy.mp3" frameborder="0" allowfullscreen></iframe>
         <h1>Bine ati venit !</h1>
         <p>
             Daca te pasioneaza universul, vrei sa studiezi astronomia si astrofizica
@@ -79,23 +80,6 @@
 
         }
       )();
-    </script>
-    <script>
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("active-dropdown");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-      } else {
-      dropdownContent.style.display = "block";
-      }
-      });
-    }
     </script>
   </body>
 </html>
