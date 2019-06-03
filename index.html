@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+``<!DOCTYPE html>
 <html>
   <head>
     <title>Astronomy Hub-beta</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
     <link rel="stylesheet" href="AstronomyHub.css">
     <style></style>
   </head>
-  <body>
+  <body onload="loadDoc('/pages/homepage.html')">
     <aside>
           <figure>
               <img id="sideLogo" src='./res/common/AHL.png' />
@@ -16,70 +17,52 @@
           <nav class="nav">
             <ul>
               <li>
-                  <a href="#" class="selected">Home</a>
+                <a class="selected" onclick="loadDoc('/pages/homepage.html')">Home</a>
               </li>
               <li>
-                  <a href="#">Olimpiada</a>
-                  <ul>
-                      <li><a href="#">Programa</a></li>
-                      <li><a href="#">Despre</a></li>
-                      <li><a href="#">Probleme si Subiecte</a></li>
-                  </ul>
+                <a >Olimpiada</a>
+                <ul>
+                  <li><a onclick="loadDoc('/pages/programa.html')">Programa</a></li>
+                  <li><a onclick="loadDoc('/pages/despre.html')">Despre</a></li>
+                  <li><a >Probleme si Subiecte</a></li>
+                </ul>
               </li>
               <li>
-                  <a href="#">Teorie</a>
-                  <ul>
-                      <li><a href="#">Legea lui Kepler</a></li>
-                      <li><a href="#">Mecanica orbitala</a></li>
-                  </ul>
+                <a>Teorie</a>
+                <ul>
+                  <li><a onclick="loadDoc('/pages/lectia_1.html')">Legea lui Kepler</a></li>
+                  <li><a >Mecanica orbitala</a></li>
+                </ul>
               </li>
               <li>
-                  <a href="#">Materiale</a>
+                  <a >Materiale</a>
               </li>
               <li>
-                  <a href="#">Despre Noi</a>
+                  <a onclick="loadDoc('/pages/despre.html')" >Despre Noi</a>
               </li>
             </ul>
+
           </nav>
     </aside>
-    <main>
-        <div>
-            <video width="500" autoplay muted loop>
-                <source src="./res/homepage/logo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <!--Astronomy-Metallica -->
-        <iframe width="0" height="0" src="./res/common/Astronomy.mp3" frameborder="0" allowfullscreen></iframe>
-        <h1>Bine ati venit !</h1>
-        <p>
-            Daca te pasioneaza universul, vrei sa studiezi astronomia si astrofizica
-            sau vrei doar sa te relaxezi citind despre acestea ai ajuns in locul potrivit.
-        </p>
-        <p>Carti, articole, filme, lunk-uri, aici puteti gasi absolut tot in legatura cu astronomia</p>
-        <p>
-            De asemenea, daca esti elev din Cluj, te asteptam sa faci parte din grupul nostru.
-            Organizam ore de pregatire pentru Olimpiada, nopti de observatie si multe altele!
-        </p>
-        <a href="../lectii/index.html" class="cta">Incepe!</a>
+    <main id="main">
+      Lorem ipsum DRAGNEA sit amet, consectetur adipisicing elit. Repudiandae blanditiis ipsum ut, aliquam consectetur impedit sed provident inventore neque accusantium quasi reprehenderit magni, facere delectus beatae libero quaerat voluptates velit amet. Pariatur, culpa harum beatae architecto maiores ullam! Quidem nemo ex repellat sunt corporis similique illo nisi rerum doloremque enim possimus officiis at autem saepe, facere, consequuntur dolorem accusamus ab ad. Dolorem ullam porro distinctio error, quia itaque aperiam mollitia voluptates quod, ipsa optio repellat sint reiciendis eveniet facilis blanditiis aliquam animi. Possimus, ullam perspiciatis officia sunt eveniet! Modi autem quia sit repudiandae atque cum soluta tempore, quos. Facilis ullam quasi molestias vero beatae perspiciatis ipsam! Officia rem sint reiciendis laudantium labore, dolores possimus iste dolore nihil obcaecati saepe perferendis beatae, laboriosam nesciunt eveniet quam itaque nobis unde! Adipisci assumenda eveniet quis harum quisquam, ullam fuga quod consequatur autem debitis laboriosam aperiam, dolor cum itaque quibusdam asperiores corporis veniam consequuntur excepturi! Ipsam facere, repellendus modi accusantium, voluptatem expedita nesciunt voluptas soluta praesentium fugit maiores ea reiciendis sequi aperiam deserunt ut eaque provident laborum! Necessitatibus eum eligendi voluptatibus id sunt in illo assumenda cumque nemo eius, eveniet voluptatem, ullam. Aspernatur neque, eaque vero quam laborum suscipit laudantium temporibus nihil doloribus perferendis vitae maxime repellat esse nesciunt odit, nam nemo eum, mollitia impedit modi eos quasi. Dolores eos illo reprehenderit facilis eum autem suscipit voluptas omnis dolore sequi non similique nihil mollitia laboriosam ipsa atque vero, corporis asperiores placeat. Adipisci autem harum, explicabo obcaecati quas natus ad ab quam amet provident voluptatibus, veniam qui voluptate architecto suscipit minus. Esse rerum iste corrupti cumque voluptatem sed ut sequi reiciendis nesciunt molestias labore neque odio, magnam illo! Omnis et totam sapiente illo, quaerat libero hic. Ea dolor nesciunt maiores, qui facere impedit adipisci facilis, perferendis laborum illum atque repellendus deleniti eveniet! Dignissimos eligendi quisquam non esse officia, inventore ea placeat praesentium rerum libero facere minima, quae officiis. Voluptatem dignissimos excepturi animi quae nihil. At, vel omnis expedita architecto, amet qui ratione harum. Tempora reiciendis sit numquam explicabo minus, a necessitatibus est, odio nemo placeat reprehenderit. A amet, quae, deserunt porro temporibus quibusdam. Ipsam, eos, natus. Delectus maiores voluptatem, doloribus expedita repellendus accusamus quae, quis placeat, laborum itaque, soluta animi voluptatibus error quibusdam aliquam vero consectetur vitae molestias provident rerum fuga sit unde? Dolor eum eius, quod repellat aliquam illo expedita. Sapiente enim suscipit molestias quidem dolores debitis quasi obcaecati quis amet deserunt, accusantium, veniam, recusandae voluptates corporis earum error possimus voluptas velit asperiores aperiam odio quibusdam similique. Rem delectus unde voluptatum nisi, at consectetur quasi quidem distinctio dolor pariatur in libero veniam voluptas quod similique molestias quis! Commodi, impedit assumenda rem id, corrupti obcaecati cumque fugiat dolore neque! Saepe sint, laudantium nisi, doloremque error quia odio voluptas voluptatum ab soluta vel, corporis quidem dolor expedita! Odio tenetur labore omnis quas sed odit distinctio corporis laborum eligendi incidunt. Animi saepe inventore autem quisquam sit libero aspernatur. Aliquam voluptatem adipisci, voluptatum pariatur tempore. Neque quis autem at? Tempore ipsa id fugit quia, doloremque perspiciatis porro animi.
     </main>
 
-    <script>
 
-      (function()
+      <script>
+        function loadDoc(target)
         {
-        var menu = document.querySelector('ul'),
-            menulink = document.getElementById('button_menu');
-
-        menulink.addEventListener('click',function(e){
-            menu.classList.toggle('active');
-            e.preventDefault();
-          }
-        )
-
-
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function()
+          {
+            if (this.readyState == 4 && this.status == 200)
+            {
+             document.getElementById("main").innerHTML = this.responseText;
+            }
+          };
+          xhttp.open("GET", target, true);
+          xhttp.send();
         }
-      )();
     </script>
   </body>
 </html>
