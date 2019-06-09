@@ -1,15 +1,21 @@
+      /* AstronomyHub stylesheet */
+
+
+      /* EXTERNAL RESOURCES */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Roboto|Roboto+Mono|Ubuntu');
 
+      /*BASIC CONFIG*/
 html{
   height: 100%;
-  scroll-behavior: smooth;
+}
+body{
+  margin:0;
+  padding:0;
+  background-color: #f00;
 }
 
+      /* FONTS */
 body, head{
-height: 100%;
-width:100%;
-
-
     font-family: 'Montserrat', sans-serif;
 
     font-family: 'Roboto', sans-serif;
@@ -21,7 +27,7 @@ width:100%;
     font-family: 'Comfortaa', cursive;
 }
 
-
+      /* TEXT STYLES */
 h1{
   font-family: 'Comfortaa', cursive;
   font-size: 50px;
@@ -42,13 +48,7 @@ p{
   font-size: 35px;
 }
 
-
-body{
-
-  margin:0;
-  padding:0;
-  background-color: #fff;
-}
+      /* SIDE MENU */
 
 aside{
   margin: 0 2em 0 0;
@@ -66,20 +66,26 @@ nav ul {
 }
 
 nav ul li{
+  /*removing the default style*/
   text-decoration: none;
   list-style-type: none;
 }
 
-nav ul li a{
-  margin: 0;
-padding:1em .5em;
+nav ul li>a{   /*The  '>' only selects the IMMEDIATE CHILD*/
+padding: 1em;
+display: block;
+margin:1em, .5em;
+}
+
+nav ul li>a:hover{
+  background-color: #009eff;
 }
 
 nav ul li ul{
   margin-left: 2em;
 }
 
-nav ul li a:hover{
+nav ul li ul a:hover{
   background-color: #009eff;
 }
 
@@ -93,12 +99,16 @@ figcaption{
   margin:0;
 }
 
+      /* OTHER */
 img{
   width:100%;
   margin:0;
 }
 
 main{
+  top:0;
+  overflow: hidden;
+  height: 100%;
   margin: 0 0 0 20%;
   background-color: #555555;
   color:#fff;
@@ -108,54 +118,38 @@ main{
   top:48px;
 }
 
+.cta{
+  background-color: #009eff;
+  border-radius: 2em;
+  margin: 3em 35%;
+  text-align: center;
+  font-size: 2em;
+  padding:.42em 0;
 
+  display: block;
+  width:30%;
+}
 
-
+      /* DESKTOP ONLY */
 @media only screen and (min-width: 768px) {
-  body{
-    margin:0;
-    display:grid;
 
+  .cardgallery{ /*this class is to be replaced with a figure*/
 
-  }
-
-
-  main{
-
-  }
-
-  aside{
-    grid-template-columns: auto;
-    grid-auto-rows: 144px auto;
-    padding: 0;
-  }
-
-  figure{
-
-  }
-
-  figcaption{display: none;}
-
-
-  ul li a{
-    display: block;
-    cursor:pointer;
-    margin-top: 2em;
-    position: relative;
-
-  }
-
-  .cardgallery{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0;
   }
 
   #button_menu{display: none;}
-  #sideLogo{}
+  #sideLogo{display: block;}
 
-  .illustration{
-    width: 50%;
-    margin: 25%;
+  .illustration-S{
+
+  }
+
+  .illustration-M{
+
+  }
+
+  .illustration-L{
+
   }
 
 }
