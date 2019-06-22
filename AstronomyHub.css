@@ -195,8 +195,12 @@ main{
       /* DESKTOP ONLY */
 @media only screen and (min-width: 768px) {
   aside {
-    width: 20%;
+    width: 15%;
     left: 0;
+  }
+
+  main{
+    margin-left: 15%;
   }
 
   .extendBtn{
