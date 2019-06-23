@@ -82,6 +82,7 @@ nav ul {
 
 nav ul li{
   /*removing the default style*/
+  color:#fff;
   text-decoration: none;
   list-style-type: none;
 }
@@ -94,6 +95,7 @@ margin:1em, .5em;
 
 nav ul li>a:hover{
   background-color: #009eff;
+  color: #000;
 }
 
 nav ul li ul{
@@ -195,12 +197,12 @@ main{
       /* DESKTOP ONLY */
 @media only screen and (min-width: 768px) {
   aside {
-    width: 15%;
+    width: 20%;
     left: 0;
   }
 
   main{
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .extendBtn{
