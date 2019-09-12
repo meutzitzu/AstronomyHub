@@ -11,9 +11,17 @@ notes:
 -we try to keep it as simple as possible. no libraries or frameworks so far, just stock HTML and CSS, with only the absolutely necessary amount of Js.
 
 
+
 latest update:
 *AJAX has been successfully implemented*
+=======
+updates:
+*AJAX has been successfully implemented*
 side menu was changed from grid based to inline
+Usable mobile version
+menu hover animations
+*somehow managed to inadvertently break AJAX*
 
 next step:
+*fix AJAX*
 re-add the sidemenu effects from the -legacy css *without* breaking the new menu
