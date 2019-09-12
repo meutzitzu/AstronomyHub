@@ -116,9 +116,6 @@ nav li ul li {
   transition:height 250ms ease-out;
 }
 
-
-
-
 nav ul > li:hover ul li {
   height: 3em;
 }
@@ -171,33 +168,35 @@ main{
 
 .cardgallery{
   display: grid;
-  
+  grid-template-columns:  ;
+  padding: .5em;
 }
 
 .cta{
   background-color: #009eff;
-  border-radius: 2em;
-  margin: 3em 35%;
-  text-align: center;
-  font-size: 2em;
-  padding:.42em 0;
-
   display: block;
   width:30%;
+  margin: 3em 35%;
+  padding:.42em 0;
+  border-radius: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 
+
+
 .card{
-  box-shadow: 0 4px 8px 0 ;
+  background-color: #444444;
+
   margin: .5em;
+  padding: 0em;
+  border-radius: .5em;
+  box-shadow: 0 4px 8px 0 ;
   transition: 0.3s;
-  width: 40%;
-  border-radius: 1em;
-  padding: 1em;
 }
 
 .card img{
-
-  border-radius: .75em;
+  border-radius: .5em;
 }
 
 .card:hover {
@@ -209,6 +208,10 @@ main{
   aside{
     width:40%;
     left: -40%;
+  }
+
+  .cardgallery{
+    grid-template-columns: 1fr 1fr;
   }
 
   .extendBtn{
@@ -226,6 +229,10 @@ main{
 
   main{
     margin-left: 20%;
+  }
+
+  .cardgallery{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .extendBtn{
