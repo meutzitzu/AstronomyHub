@@ -34,8 +34,8 @@
             <a >Olimpiada</a>
             <ul>
               <li><a onclick="loadDoc('/pages/programa.html')">Programa</a></li>
-              <li><a onclick="loadDoc('/pages/despre.html')">Despre</a></li>
-              <li><a onclick="loadDoc('/pages/LightSail2.docx.html')">Probleme si Subiecte</a></li>
+              <li><a onclick="loadDoc('/pages/')">Despre</a></li>
+              <li><a >Probleme si Subiecte</a></li>
             </ul>
           </li>
 
