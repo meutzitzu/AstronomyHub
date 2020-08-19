@@ -53,10 +53,10 @@ p{
 aside{
   z-index: 1;
   left:-60%;
-  margin: 0 2em 0 0;
+  margin: 0 0 0 0;
   width: 60%;
   position:fixed;
-  padding: 0;
+  padding: 0 0 0 0;
   height:100%;
   background-color: #424242;
   color:#dddddd;
@@ -156,6 +156,15 @@ main{
   background-color: #424242;
 }
 
+.extendBtn svg{
+	height: 40%;
+	width: 100%;
+	position: relative;
+	top: 30%;
+	left: 20%;
+	margin: 0;
+	padding: 0%;
+}
 .arrow{
   margin: 60% 25% ;
   width: 10px;
@@ -191,7 +200,7 @@ main{
   margin: .5em;
   padding: 0em;
   border-radius: .5em;
-  box-shadow: 0 4px 8px 0 ;
+  box-shadow: 0 4px 8px 0 rgba(1,0,0,0.2);
   transition: 0.3s;
 }
 
